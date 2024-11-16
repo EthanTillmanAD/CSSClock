@@ -1,0 +1,74 @@
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background: #930511;*/
+    background-image: url(./images/field.jpeg);
+    background-size: 4000px 2000px ;
+    margin: 0;
+    list-style-type: none;
+}
+#clock{
+    color: wheat;
+   
+    font-weight: bold;
+    text-shadow: 500px;
+    font-family: "Pacifico", cursive ;
+    scale: 18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+   
+    
+    text-shadow: 
+    1px .5px 0px rgba(97, 6, 6, 0.671),
+    1.3px .5px 0px rgba(0, 0, 0, 0.5),
+    1px .6px 0px rgba(80, 18, 77, 0.438),
+    1px .5px 0px rgba(0, 0, 0, 0.5),
+    1px .5px 0px rgba(0, 0, 0, 0.5);
+}
+#clock:hover{
+ 
+  animation: beat 10s infinite;
+  
+ 
+}
+
+@keyframes beat {
+    20%{
+      transform: translateX(17px);
+    }
+    40%{
+      transform: translateY(25px);
+    }
+    
+    60%{
+      transform: translateX(-20px);
+  }
+  80%{
+    transform: translateY(-28px);
+  }
+  100%{
+    transform: translateZ(0px);
+    
+  }
+}
+
+#dont-press{
+  display: flexs;
+  align-self: last baseline;
+  border: 0;
+  
+  background-color: transparent;
+ 
+ 
+  
+}
+
+
