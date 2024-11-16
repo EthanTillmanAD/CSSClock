@@ -71,11 +71,15 @@ body {
 }
 
 @media screen and (min-width: 980 ) {
+  
   #clock {
-    font-size: 2rem; /* Even smaller font size for very small screens */
+    
+   scale: 3rem; /* Even smaller font size for very small screens */
   }
+  
 
   body {
+    background-color: blue;
     padding: 10px; /* Add some padding to prevent the content from being too close to the edge */
   }
 
