@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -24,7 +30,7 @@ body {
 
    
     
-    text-shadow: 
+    text-shadow: s
     1px .5px 0px rgba(97, 6, 6, 0.671),
     1.3px .5px 0px rgba(0, 0, 0, 0.5),
     1px .6px 0px rgba(80, 18, 77, 0.438),
@@ -67,13 +73,64 @@ body {
  
  
 }
-
-@media screen and (max-width: 380px) and (min-width: 0px) and (orientation: landscape) {
+@media all and (max-width: 375px)and (orientation: portrait) {
   
   
   #clock {
-   scale: 2rem; 
-    transform: rotateY(90deg);
+    display: flex;
+    transform: translateX(-.15rem);
+  font-size: .2rem;
+   
+  text-shadow: 
+  .02rem .04px 0px rgba(97, 6, 6, 0.671),
+  .03rem .01rem 0px rgba(0, 0, 0, 0.5),
+  .02rem 0px 0px rgba(80, 18, 77, 0.438),
+  0px 0px 0px rgba(0, 0, 0, 0.5),
+  0px 0px 0px rgba(0, 0, 0, 0.5);
+  
+  }
+  
+
+  body {
+    background-size: 1200px;
+    background-position-y: rotate(90deg);
+    padding: 10px; 
+  }
+
+  #dont-press {
+    font-size: 1rem; 
+  }
+
+  #clock:hover{
+ 
+    animation: beat 10s infinite;
+    
+    
+   
+  }
+  @keyframes beat {
+    
+  100%{
+    
+    
+  }
+  
+  
+}
+}
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  
+  
+  #clock {
+    font-size: .3rem;
+    /* transform: rotateY(90deg); */
+    
+    text-shadow: 
+    .02rem .04px 0px rgba(97, 6, 6, 0.671),
+    .03rem .01rem 0px rgba(0, 0, 0, 0.5),
+    .02rem 0px 0px rgba(80, 18, 77, 0.438),
+    0px 0px 0px rgba(0, 0, 0, 0.5),
+    0px 0px 0px rgba(0, 0, 0, 0.5);
   }
   
 
@@ -84,32 +141,36 @@ body {
   }
 
   #dont-press {
-    font-size: 1rem; 
+    font-size: .5rem; 
+    display: flex;
+    justify-content: center;
   }
 
+  #clock:hover{
  
-  
-}
-@media all and (max-width: 380px)and (min-width: 100px) and (orientation: portrait) {
-  
-  
-  #clock {
-   scale: 2rem; 
-  
-  }
-  
-
-  body {
-    background-size: 1000px;
+    animation: beat 10s infinite;
     
-    padding: 10px; 
+   
   }
-
-  #dont-press {
-    font-size: 1rem; 
-  }
-
   
+  @keyframes beat {
+      20%{
+        transform: translateX(.17rem);
+      }
+      40%{
+        transform: translateY(.45rem);
+      }
+      
+      60%{
+        transform: translateX(-.2rem);
+    }
+    80%{
+      transform: translateY(-.45rem);
+    }
+    100%{
+      transform: translateZ(0px);
+      
+    }
   
 }
 
