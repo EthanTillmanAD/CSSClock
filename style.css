@@ -72,8 +72,8 @@ body {
   
   
   #clock {
-   scale: 3; /* Even smaller font size for very small screens */
-  
+   scale: 2rem; /* Even smaller font size for very small screens */
+    transform: rotateY(90deg);
   }
   
 
@@ -96,7 +96,7 @@ body {
   
   
   #clock {
-   scale: 5; /* Even smaller font size for very small screens */
+   scale: 2rem; /* Even smaller font size for very small screens */
   
   }
   
