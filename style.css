@@ -72,7 +72,7 @@ body {
   
   
   #clock {
-   scale: 1rem; 
+   scale: 0rem; 
     transform: rotateY(90deg);
   }
   
