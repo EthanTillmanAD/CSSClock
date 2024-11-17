@@ -68,11 +68,11 @@ body {
  
 }
 
-@media all and (max-width: 480px)and (orientation: landscape) {
+@media screen and (max-width: 380px) and (min-width: 0px) and (orientation: landscape) {
   
   
   #clock {
-   scale: 0rem; 
+   scale: 2rem; 
     transform: rotateY(90deg);
   }
   
@@ -90,11 +90,11 @@ body {
  
   
 }
-@media all and (max-width: 480px)and (orientation: portrait) {
+@media all and (max-width: 380px)and (min-width: 100px) and (orientation: portrait) {
   
   
   #clock {
-   scale: 1rem; 
+   scale: 2rem; 
   
   }
   
